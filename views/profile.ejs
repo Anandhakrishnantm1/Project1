@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include ('header.ejs') %>
+        <main>
+            <h1>Welcome to <%= title %>
+            </h1>
+            <h1>Name:<%= userData?.name %>
+            </h1>
+            <h1>Age:<%= userData?.age %>
+            </h1>
+            <h1>City:<%= userData?.city %>
+            </h1>
+        </main>
+        <%- include ('footer.ejs') %>
+</body>
+
+</html>
